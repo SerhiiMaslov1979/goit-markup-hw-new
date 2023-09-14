@@ -1,0 +1,36 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --logo-text-color: #000;
+  --accent-color: #2196f3;
+  --activ-accent-color: #188ce8;
+  --primary-bg-color: #fff;
+  --footer-hero-bg-color: #2f303a;
+  --section-bg-color: #f5f4fa;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-text-color);
+}
+ul {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.logo {
+  color: var(--logo-text-color);
+  text-decoration: none;
+}
+.logo-color {
+  color: var(--accent-color);
+}
