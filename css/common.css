@@ -12,6 +12,8 @@
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
+
+  font-family: "Roboto", "Raleway", sans-serif;
 }
 h1,
 h2,
@@ -30,6 +32,11 @@ ul {
 .logo {
   color: var(--logo-text-color);
   text-decoration: none;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
 }
 .logo-color {
   color: var(--accent-color);
