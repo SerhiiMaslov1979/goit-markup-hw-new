@@ -122,7 +122,9 @@
 }
 
 /* workers */
-
+.workers {
+  background: var(--section-bg-color);
+}
 .workers-main-title {
   font-weight: 700;
   font-size: 36px;
