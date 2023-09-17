@@ -15,6 +15,10 @@ body {
 
   font-family: "Roboto", "Raleway", sans-serif;
 }
+* {
+  color: var(--title-text-color);
+  font-style: normal;
+}
 h1,
 h2,
 h3,
