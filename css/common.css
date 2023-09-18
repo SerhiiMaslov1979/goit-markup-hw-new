@@ -8,7 +8,14 @@
   --footer-hero-bg-color: #2f303a;
   --section-bg-color: #f5f4fa;
 }
-
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
@@ -29,9 +36,39 @@ h6 {
 }
 ul {
   list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 .link {
   text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  display: block;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
 }
 .logo {
   color: var(--logo-text-color);
