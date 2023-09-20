@@ -7,6 +7,9 @@
   --primary-bg-color: #fff;
   --footer-hero-bg-color: #2f303a;
   --section-bg-color: #f5f4fa;
+  --footer-text-color: #ffffff99;
+  --border-color: #eeeeee;
+  --header-border-color: #ececec;
 }
 html {
   box-sizing: border-box;
@@ -33,6 +36,7 @@ h4,
 h5,
 h6 {
   color: var(--title-text-color);
+  margin: 0;
 }
 ul {
   list-style: none;
@@ -48,6 +52,7 @@ a {
 p {
   margin: 0;
   padding: 0;
+  color: var(--primary-text-color);
 }
 img {
   display: block;
@@ -70,15 +75,16 @@ button {
   cursor: pointer;
   font-family: inherit;
 }
-.logo {
-  color: var(--logo-text-color);
-  text-decoration: none;
 
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-}
-.logo-color {
-  color: var(--accent-color);
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
