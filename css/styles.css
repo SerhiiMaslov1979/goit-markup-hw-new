@@ -91,18 +91,12 @@
   color: var(--primary-text-color);
 }
 
-/* .auth-contact-link:hover,
-.auth-contact-link:focus{
-  color: var(--accent-color);
-} */
-
 .icon-auth-nav{
   display: flex;
   margin-right: 10px;
   fill: currentColor;
 
 }
-
 
 .header-page .link:hover,
 .header-page .link:focus{
