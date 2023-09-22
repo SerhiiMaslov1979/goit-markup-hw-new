@@ -153,6 +153,9 @@
   background: var(--footer-hero-bg-color);
   text-align: center;
   padding: 200px 0;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
