@@ -154,23 +154,30 @@
 }
 .footer-social-title {
   margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--primary-bg-color);
+  text-transform: uppercase;
 }
 .footer-social-list {
   display: flex;
   align-items: baseline;
-
-  /* width: 206px; */
-  /* justify-content: center; */
   gap: 10px;
-
-  outline: 1px solid red;
 }
 .footer-social-item {
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  outline: 1px solid teal;
+  background: var(--icon-bg);
 }
+.footer-social-item:hover,
+.footer-social-item:focus {
+  background: var(--accent-color);
+}
+
 .footer-social-link {
   display: flex;
   align-items: center;
@@ -179,6 +186,7 @@
   height: 100%;
 }
 .footer-social-icon {
+  fill: #fff;
 }
 /* main index*/
 
@@ -331,8 +339,6 @@
 }
 
 .workers-boxcard {
-  /* display: block;
-  justify-content: center; */
   padding: 30px 0;
 }
 .workers-main-title {
@@ -364,19 +370,29 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-  /* align-items: center; */
-  /* width: 206px;
-  height: 44px; */
-  outline: 1px solid red;
-  /* margin-left: auto;
-  margin-right: auto;
-  margin-top: 16px; */
+  margin-top: 16px;
 }
 
 .social-networks-item {
   width: 44px;
   height: 44px;
-  outline: 1px solid teal;
+  border-radius: 50%;
+  border: 1px solid inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-networks-icon {
+  fill: var(--border-bg-icon);
+}
+
+.social-networks-item:hover,
+.social-networks-item:focus {
+  background: var(--accent-color);
+}
+.social-networks-item:hover .social-networks-icon,
+.social-networks-item:focus .social-networks-icon {
+  fill: var(--primary-bg-color);
 }
 
 /* clients */
@@ -384,8 +400,6 @@
 .clients-list {
   display: flex;
   gap: 30px;
-  align-items: center;
-  outline: 1px solid red;
 }
 
 .clients-title {
@@ -398,9 +412,29 @@
 }
 .clients-item {
   width: calc((100% - 150px) / 6);
-  /* width: 170px; */
   height: 92px;
-  outline: 1px solid teal;
+}
+.clients-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-bg-icon);
+}
+
+.clients-icon {
+  fill: var(--border-bg-icon);
+}
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
 }
 
 /* main portfolio */

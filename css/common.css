@@ -11,6 +11,8 @@
   --border-color: #eeeeee;
   --header-border-color: #ececec;
   --hero-bg-color: #c4c4c4;
+  --icon-bg: #ffffff1a;
+  --border-bg-icon: #afb1b8;
 }
 html {
   box-sizing: border-box;
