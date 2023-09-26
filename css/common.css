@@ -13,6 +13,7 @@
   --hero-bg-color: #c4c4c4;
   --icon-bg: #ffffff1a;
   --border-bg-icon: #afb1b8;
+  --overlay-bg: #2196f3e5;
 }
 html {
   box-sizing: border-box;

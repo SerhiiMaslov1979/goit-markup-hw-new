@@ -442,6 +442,9 @@
 }
 
 /* main portfolio */
+
+/* btn */
+
 .portfolio-button {
   font-family: inherit;
   font-weight: 500;
@@ -464,6 +467,31 @@
 .portfolio-button:active {
   background: var(--accent-color);
 }
+
+.projects-btn-list {
+  display: flex;
+  justify-content: center;
+}
+.projects-btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* portfolio */
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.portfolio-card {
+  padding: 20px 24px;
+  border-left: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}
+
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
@@ -480,24 +508,41 @@
   text-align: left;
 }
 
-.projects-btn-list {
-  display: flex;
-  justify-content: center;
-}
-.projects-btn-item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 50px;
+.product-thumb {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-.portfolio-card {
-  padding: 20px 24px;
-  border-left: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
+.product-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay-bg);
+  transform: translatey(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.product-overlay p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--primary-bg-color);
+  padding: 63px 24px;
+}
+
+.projects-item:hover .product-overlay,
+.projects-item:focus .product-overlay {
+  transform: translateY(0);
+}
+
+.projects-item:active .product-overlay {
+  transform: translateY(0);
 }
