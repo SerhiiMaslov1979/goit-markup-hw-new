@@ -119,6 +119,21 @@
   color: var(--accent-color);
 }
 
+.link.current {
+  position: relative;
+}
+
+.current::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--accent-color);
+}
+
 /* footer */
 
 .footer-page {
@@ -267,6 +282,83 @@
 .hero-button:active {
   background: var(--activ-accent-color);
 }
+
+/*modal-window*/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--background-overlay);
+  transition: opacity var(--time-function) linear,
+    visibility var(--time-function) linear;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 528px;
+  min-height: 581px;
+  border-radius: 4px;
+
+  transition: transform var(--time-function) linear;
+
+  background-color: var(--primary-bg-color);
+}
+
+.modal:hover,
+.modal:focus {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 6px;
+
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: border-color var(--time-function)
+    var(--transition-function);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  border-color: var(--accent-color);
+}
+
+.modal-close-btn:hover .modal-close-icon,
+.modal-close-btn:focus .modal-close-icon {
+  fill: var(--accent-color);
+}
+.modal-close-icon {
+  fill: var(--border-bg-icon);
+  transition: fill var(--time-function)
+    var(--transition-function);
+}
+
 /* feature */
 
 .feature {
