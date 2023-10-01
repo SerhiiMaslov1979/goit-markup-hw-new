@@ -264,10 +264,6 @@
   border-radius: 4px;
   padding: 10px 32px;
 
-  /* transition-property: background;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
-
   transition: background var(--time-function)
       var(--transition-function),
     color var(--time-function) var(--transition-function);
@@ -276,7 +272,7 @@
 .hero-button:hover,
 .hero-button:focus {
   background: var(--activ-accent-color);
-  color: yellow;
+  /* color: yellow; */
 }
 
 .hero-button:active {
@@ -397,9 +393,6 @@
 .feature-item:nth-child(4)::before {
   background-image: url(../images/svg/astronaut.svg);
 }
-/* .icon-antenna::before {
-  background-image: url(../images/svg/antenna.svg);
-  } */
 
 .feature-main-title {
   font-weight: 700;
