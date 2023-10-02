@@ -180,7 +180,7 @@
 .footer-social-networks {
   display: flex;
   flex-direction: column;
-  margin-left: 70px;
+  margin-left: 93px;
 }
 .footer-social-title {
   margin-bottom: 20px;
@@ -221,6 +221,24 @@
 .footer-social-icon {
   fill: #fff;
 }
+
+/* footer-form */
+
+.footer-form {
+  margin-left: 93px;
+}
+
+.footer-title-form {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--primary-bg-color);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
 /* main index*/
 
 /* hero */
