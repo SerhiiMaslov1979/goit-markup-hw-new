@@ -85,25 +85,6 @@
             Замовити послугу
           </button>
         </div>
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <button
-              type="button"
-              class="modal-close-btn"
-              data-modal-close
-            >
-              <svg
-                class="modal-close-icon"
-                width="18"
-                height="18"
-              >
-                <use
-                  href="./images/svg/symbol-defs.svg#icon-close"
-                ></use>
-              </svg>
-            </button>
-          </div>
-        </div>
       </section>
       <section class="section feature">
         <div class="container">
@@ -616,7 +597,6 @@
               type="email"
               name="user-email"
               placeholder="E-mail"
-              id="e-mail"
               required
             />
             <button class="footer-input-btn" type="submit">
@@ -631,6 +611,86 @@
                 ></use>
               </svg>
             </button>
+          </form>
+        </div>
+      </div>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button
+            type="button"
+            class="modal-close-btn"
+            data-modal-close
+          >
+            <svg
+              class="modal-close-icon"
+              width="18"
+              height="18"
+            >
+              <use
+                href="./images/svg/symbol-defs.svg#icon-close"
+              ></use>
+            </svg>
+          </button>
+
+          <h2 class="modal-title">
+            Залиште свої дані, ми вам передзвонимо
+          </h2>
+          <form class="modal-form js-speaker-modal-form">
+            <div class="form-field">
+              <label for="user-name">Імʼя</label>
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="user-tel">Телефон</label>
+              <input
+                type="text"
+                name="user-tel"
+                id="user-tel"
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="user-mail">Пошта</label>
+              <input
+                type="text"
+                name="email"
+                id="user-mail"
+                autocomplete="user-mail"
+              />
+            </div>
+
+            <div class="form-field comment">
+              <label for="user-comment">Коментар</label>
+              <input
+                type="text"
+                name=""
+                id="user-comment"
+                placeholder="Введіть текст"
+              />
+            </div>
+            <div class="checkbox-modal">
+              <label>
+                <input
+                  type="checkbox"
+                  class="checkbox-input"
+                  name="topic"
+                  required
+                /><span class="check-icon"></span>
+
+                <span class="checkbox-text"
+                  >Погоджуюся з розсилкою та приймаю </span
+                ><a href="#" class="checkbox-text-activ"
+                  >Умови договору</a
+                >
+              </label>
+            </div>
+
+            <button>Відправити</button>
           </form>
         </div>
       </div>
