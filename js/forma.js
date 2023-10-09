@@ -1,21 +1,26 @@
-(() => {
-  document
-    .querySelector(".js-speaker-form")
-    .addEventListener("submit", (e) => {
-      e.preventDefault();
-      new FormData(e.currentTarget).forEach((value, name) =>
-        console.log(`${name}: ${value}`)
-      );
-    });
-})();
+const speakerForm = document.querySelector(
+  ".js-speaker-form"
+);
+const speakerModalForm = document.querySelector(
+  ".js-speaker-modal-form"
+);
 
-(() => {
-  document
-    .querySelector(".js-speaker-modal-form")
-    .addEventListener("submit", (e) => {
-      e.preventDefault();
-      new FormData(e.currentTarget).forEach((value, name) =>
-        console.log(`${name}: ${value}`)
-      );
-    });
-})();
+if (speakerForm) {
+  speakerForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    new FormData(e.currentTarget).forEach((value, name) =>
+      console.log(`${name}: ${value}`)
+    );
+    closeModal();
+  });
+}
+
+if (speakerModalForm) {
+  speakerModalForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    new FormData(e.currentTarget).forEach((value, name) =>
+      console.log(`${name}: ${value}`)
+    );
+    closeModal();
+  });
+}
