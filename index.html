@@ -638,47 +638,87 @@
           <form class="modal-form js-speaker-modal-form">
             <div class="form-field">
               <label for="user-name">Імʼя</label>
-              <input
-                type="text"
-                name="user-name"
-                id="user-name"
-              />
+              <div class="input-wrap">
+                <input
+                  class="modal-input"
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                /><svg
+                  class="modal-input-icon"
+                  width="18px"
+                  height="18px"
+                >
+                  <use
+                    href="./images/svg/symbol-defs.svg#icon-person"
+                  ></use>
+                </svg>
+              </div>
             </div>
 
             <div class="form-field">
-              <label for="user-tel">Телефон</label>
-              <input
-                type="text"
-                name="user-tel"
-                id="user-tel"
-              />
+              <label for="user-tel" class="input-label"
+                >Телефон</label
+              >
+              <div class="input-wrap">
+                <input
+                  class="modal-input"
+                  type="text"
+                  name="user-tel"
+                  id="user-tel"
+                /><svg
+                  class="modal-input-icon"
+                  width="18px"
+                  height="18px"
+                >
+                  <use
+                    href="./images/svg/symbol-defs.svg#icon-phone"
+                  ></use>
+                </svg>
+              </div>
             </div>
 
             <div class="form-field">
-              <label for="user-mail">Пошта</label>
-              <input
-                type="text"
-                name="email"
-                id="user-mail"
-                autocomplete="user-mail"
-              />
+              <label for="user-mail" class="input-label"
+                >Пошта</label
+              >
+              <div class="input-wrap">
+                <input
+                  class="modal-input"
+                  type="text"
+                  name="email"
+                  id="user-mail"
+                  autocomplete="user-mail"
+                /><svg
+                  class="modal-input-icon"
+                  width="18px"
+                  height="18px"
+                >
+                  <use
+                    href="./images/svg/symbol-defs.svg#icon-email-black"
+                  ></use>
+                </svg>
+              </div>
             </div>
 
             <div class="form-field comment">
-              <label for="user-comment">Коментар</label>
-              <input
-                type="text"
-                name=""
+              <label for="user-comment" class="input-label"
+                ><span>Коментар</span></label
+              >
+              <textarea
+                class="comment-modal-input"
+                name="user-comment"
                 id="user-comment"
                 placeholder="Введіть текст"
-              />
+              ></textarea>
             </div>
             <div class="checkbox-modal">
-              <label>
+              <label for="checkbox-btn" class="checkbox">
                 <input
-                  type="checkbox"
                   class="checkbox-input"
+                  type="checkbox"
                   name="topic"
+                  id="checkbox-btn"
                   required
                 /><span class="check-icon"></span>
 
@@ -690,7 +730,9 @@
               </label>
             </div>
 
-            <button>Відправити</button>
+            <button class="modal-btn" type="submit">
+              Відправити
+            </button>
           </form>
         </div>
       </div>
