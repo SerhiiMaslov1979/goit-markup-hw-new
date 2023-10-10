@@ -211,6 +211,10 @@
   background: var(--accent-color);
 }
 
+.footer-social-item:active {
+  background: var(--accent-color);
+}
+
 .footer-social-link {
   display: flex;
   align-items: center;
@@ -293,7 +297,11 @@
 .footer-input-btn:hover,
 .footer-input-btn:focus {
   background: var(--activ-accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
+.footer-input-btn:active {
+  background: var(--activ-accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -759,8 +767,17 @@
   transition: background var(--time-function)
     var(--transition-function);
 }
+
+.social-networks-item:active {
+  background: var(--accent-color);
+}
+
 .social-networks-item:hover .social-networks-icon,
 .social-networks-item:focus .social-networks-icon {
+  fill: var(--primary-bg-color);
+}
+
+.social-networks-item:active .social-networks-icon {
   fill: var(--primary-bg-color);
 }
 
@@ -807,11 +824,18 @@
   border: 1px solid var(--accent-color);
 }
 
+.clients-link:active {
+  border: 1px solid var(--accent-color);
+}
+
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
   fill: var(--accent-color);
 }
 
+.clients-link:active .clients-icon {
+  fill: var(--accent-color);
+}
 /* main portfolio */
 
 /* btn */
@@ -845,7 +869,12 @@
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-button:active {
+  color: var(--primary-bg-color);
   background: var(--accent-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .projects-btn-list {
