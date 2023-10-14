@@ -787,14 +787,14 @@
   fill: var(--primary-bg-color);
 }
 
-/* clients */
+/* clients BEM*/
 
-.clients-list {
+.clients__list {
   display: flex;
   gap: 30px;
 }
 
-.clients-title {
+.clients__title {
   text-align: center;
   margin-bottom: 50px;
   font-weight: 700;
@@ -802,11 +802,11 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-.clients-item {
+.clients__item {
   width: calc((100% - 150px) / 6);
   height: 92px;
 }
-.clients-link {
+.clients__link {
   width: 100%;
   height: 100%;
   border-radius: 4px;
@@ -819,34 +819,35 @@
     var(--transition-function);
 }
 
-.clients-icon {
+.clients__icon {
   fill: var(--border-bg-icon);
 
   transition: fill var(--time-function)
     var(--transition-function);
 }
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   border: 1px solid var(--accent-color);
 }
 
-.clients-link:active {
+.clients__link:active {
   border: 1px solid var(--accent-color);
 }
 
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon {
   fill: var(--accent-color);
 }
 
-.clients-link:active .clients-icon {
+.clients__link:active .clients__icon {
   fill: var(--accent-color);
 }
+
 /* main portfolio */
 
-/* btn */
+/* btn - BEM */
 
-.portfolio-button {
+.projects-btn__button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -865,8 +866,8 @@
     color var(--time-function) var(--transition-function),
     box-shadow var(--time-function);
 }
-.portfolio-button:hover,
-.portfolio-button:focus {
+.projects-btn__button:hover,
+.projects-btn__button:focus {
   color: var(--primary-bg-color);
   background: var(--accent-color);
 
@@ -874,7 +875,7 @@
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.portfolio-button:active {
+.projects-btn__button:active {
   color: var(--primary-bg-color);
   background: var(--accent-color);
 
@@ -883,31 +884,31 @@
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.projects-btn-list {
+.projects-btn__list {
   display: flex;
   justify-content: center;
 }
-.projects-btn-item:not(:last-child) {
+.projects-btn__item:not(:last-child) {
   margin-right: 8px;
 }
 
-/* portfolio */
+/* portfolio card BEM*/
 
-.portfolio-list {
+.projects__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 50px;
 }
 
-.portfolio-card {
+.product__card {
   padding: 20px 24px;
   border-left: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
 }
 
-.portfolio-title {
+.product__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -915,7 +916,7 @@
   text-align: left;
   margin-bottom: 4px;
 }
-.portfolio-text {
+.product__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -923,7 +924,7 @@
   text-align: left;
 }
 
-.product-thumb {
+.product__thumb {
   position: relative;
   width: 370px;
   height: 294px;
@@ -931,7 +932,7 @@
   overflow: hidden;
 }
 
-.product-overlay {
+.product__overlay {
   display: block;
   position: absolute;
   top: 0;
@@ -943,7 +944,7 @@
   transition: transform var(--time-function) ease-in-out;
 }
 
-.product-overlay p {
+.product__overlay p {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
@@ -953,20 +954,20 @@
   padding: 63px 24px;
 }
 
-.projects-item {
+.projects__item {
   transition: box-shadow var(--time-function);
 }
-.projects-item:hover,
-.projects-item:focus {
+.projects__item:hover,
+.projects__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.projects-item:hover .product-overlay,
-.projects-item:focus .product-overlay {
+.projects__item:hover .product__overlay,
+.projects__item:focus .product__overlay {
   transform: translateY(0);
 }
 
-.projects-item:active .product-overlay {
+.projects__item:active .product__overlay {
   transform: translateY(0);
 }
