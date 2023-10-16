@@ -597,6 +597,7 @@
 } */
 
 /* Стилі для чекбокса у модальному вікні */
+
 .checkbox-modal {
   margin-bottom: 30px;
 }
@@ -607,11 +608,10 @@
 }
 
 .checkbox-input {
-  position: absolute;
   opacity: 0;
   z-index: 1;
-  -webkit-appearance: none;
-  appearance: none;
+
+  pointer-events: none;
 }
 
 .check-icon {
