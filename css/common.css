@@ -51,9 +51,6 @@ ul {
   margin: 0;
   padding-left: 0;
 }
-.link {
-  text-decoration: none;
-}
 a {
   text-decoration: none;
 }
@@ -68,6 +65,15 @@ img {
   height: auto;
 }
 
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.link {
+  text-decoration: none;
+}
+
 .container {
   display: block;
   width: 1200px;
@@ -77,11 +83,6 @@ img {
 
 .section {
   padding: 94px 0;
-}
-
-button {
-  cursor: pointer;
-  font-family: inherit;
 }
 
 .visually-hidden {

@@ -29,28 +29,28 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="page-header">
+    <header class="header">
       <div class="container">
         <nav class="navigation">
           <a href="./index.html" class="logo"
-            ><span class="logo-color">Web</span>Studio</a
+            ><span class="logo--blue">Web</span>Studio</a
           >
-          <ul class="site-nav list">
-            <li class="page-header-item">
+          <ul class="site-nav__list list">
+            <li class="site-nav__item">
               <a href="" class="link current">Студія</a>
             </li>
-            <li class="page-header-item">
+            <li class="site-nav__item">
               <a href="./portfolio.html" class="link"
                 >Портфоліо</a
               >
             </li>
-            <li class="page-header-item">
+            <li class="site-nav__item">
               <a href="" class="link">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="auth-nav list">
-          <li class="page-header-item">
+        <ul class="auth-nav__list list">
+          <li class="auth-nav__item">
             <a class="link" href="mailto:info@devstudio.com"
               ><svg class="icon" width="16" height="12">
                 <use
@@ -59,7 +59,7 @@
               >info@devstudio.com</a
             >
           </li>
-          <li class="page-header-item">
+          <li class="auth-nav__item">
             <a class="link" href="tel:+380961111111"
               ><svg class="icon" width="12" height="16">
                 <use
@@ -74,11 +74,11 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">
+          <h1 class="hero__title">
             Ефективні рішення для вашого бізнесу
           </h1>
           <button
-            class="hero-button"
+            class="hero__button"
             type="button"
             data-modal-open
           >
@@ -89,35 +89,35 @@
       <section class="section feature">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
-          <ul class="feature-list">
-            <li class="feature-item icon-antenna">
-              <h3 class="feature-title">
+          <ul class="feature__list">
+            <li class="feature__item">
+              <h3 class="feature__title">
                 УВАГА ДО ДЕТАЛЕЙ
               </h3>
-              <p class="feature-text">
+              <p class="feature__text">
                 Ідейні міркування, і навіть початок
                 повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li class="feature-item icon-clock">
-              <h3 class="feature-title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="feature-text">
+            <li class="feature__item">
+              <h3 class="feature__title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="feature__text">
                 Завдання організації, особливо рамки і місце
                 навчання кадрів тягне у себе.
               </p>
             </li>
-            <li class="feature-item icon-diagram">
-              <h3 class="feature-title">ПЛАНУВАННЯ</h3>
-              <p class="feature-text">
+            <li class="feature__item">
+              <h3 class="feature__title">ПЛАНУВАННЯ</h3>
+              <p class="feature__text">
                 Так само консультація з широким активом
                 значною мірою зумовлює.
               </p>
             </li>
-            <li class="feature-item icon-astronaut">
-              <h3 class="feature-title">
+            <li class="feature__item">
+              <h3 class="feature__title">
                 СУЧАСНІ ТЕХНОЛОГІЇ
               </h3>
-              <p class="feature-text">
+              <p class="feature__text">
                 Значимість цих проблем настільки очевидна,
                 що реалізація планових завдань.
               </p>
@@ -127,29 +127,29 @@
       </section>
       <section class="section activities">
         <div class="container">
-          <h2 class="activities-title">
+          <h2 class="activities__title">
             Чим ми займаємося
           </h2>
-          <ul class="activities-list list">
-            <li class="activities-item">
+          <ul class="activities__list list">
+            <li class="activities__item">
               <img
-                class="activities-foto"
+                class="activities__foto"
                 src="./images/section3/box3-1-1x.jpg"
                 alt=""
                 width="370"
               />
             </li>
-            <li class="activities-item">
+            <li class="activities__item">
               <img
-                class="activities-foto"
+                class="activities__foto"
                 src="./images//section3/box3-2-1x.jpg"
                 alt=""
                 width="370"
               />
             </li>
-            <li class="activities-item">
+            <li class="activities__item">
               <img
-                class="activities-foto"
+                class="activities__foto"
                 src="./images/section3/box3-3-1x.jpg"
                 alt=""
                 width="370"
@@ -160,24 +160,26 @@
       </section>
       <section class="section workers">
         <div class="container">
-          <h2 class="workers-main-title">Наша команда</h2>
-          <ul class="workers-list list">
-            <li class="workers-item">
+          <h2 class="workers-main__title">Наша команда</h2>
+          <ul class="workers__list list">
+            <li class="workers__item">
               <img
                 src="./images/section4/img4-1-1x.jpg"
                 alt=""
                 width="270"
               />
-              <div class="workers-boxcard">
-                <h3 class="workers-title">
+              <div class="boxcard">
+                <h3 class="boxcard__title">
                   Ігор Дем'яненко
                 </h3>
-                <p class="workers-text">Product Designer</p>
-                <ul class="social-networks-list list">
-                  <li class="social-networks-item">
-                    <a class="social-networks-link link"
+                <p class="boxcard__text">
+                  Product Designer
+                </p>
+                <ul class="social-networks__list list">
+                  <li class="social-networks__item">
+                    <a class="social-networks__link link"
                       ><svg
-                        class="social-networks-icon"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -186,10 +188,10 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li class="social-networks-item">
-                    <a class="social-networks-link link"
+                  <li class="social-networks__item">
+                    <a class="social-networks__link link"
                       ><svg
-                        class="social-networks-icon"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -198,10 +200,10 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li class="social-networks-item">
-                    <a class="social-networks-link link"
+                  <li class="social-networks__item">
+                    <a class="social-networks__link link"
                       ><svg
-                        class="social-networks-icon"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -210,10 +212,10 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li class="social-networks-item">
-                    <a class="social-networks-link link"
+                  <li class="social-networks__item">
+                    <a class="social-networks__link link"
                       ><svg
-                        class="social-networks-icon"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -225,22 +227,22 @@
                 </ul>
               </div>
             </li>
-            <li class="workers-item">
+            <li class="workers__item">
               <img
                 src="./images/section4/img4-2-1x.jpg"
                 alt=""
                 width="270"
               />
-              <div class="workers-boxcard">
-                <h3 class="workers-title">Ольга Рєпіна</h3>
-                <p class="workers-text">
+              <div class="boxcard">
+                <h3 class="boxcard__title">Ольга Рєпіна</h3>
+                <p class="boxcard__text">
                   Frontend Developer
                 </p>
-                <ul class="social-networks-list list">
-                  <li class="social-networks-item">
-                    <a class="social-networks-link link"
+                <ul class="social-networks__list list">
+                  <li class="social-networks__item">
+                    <a class="social-networks__link link"
                       ><svg
-                        class="social-networks-icon"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -249,10 +251,10 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li class="social-networks-item">
-                    <a class="social-networks-link link"
+                  <li class="social-networks__item">
+                    <a class="social-networks__link link"
                       ><svg
-                        class="social-networks-icon"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -261,10 +263,10 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li class="social-networks-item">
-                    <a class="social-networks-link link"
+                  <li class="social-networks__item">
+                    <a class="social-networks__link link"
                       ><svg
-                        class="social-networks-icon"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -273,10 +275,10 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li class="social-networks-item">
-                    <a class="social-networks-link link"
+                  <li class="social-networks__item">
+                    <a class="social-networks__link link"
                       ><svg
-                        class="social-networks-icon"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -288,22 +290,22 @@
                 </ul>
               </div>
             </li>
-            <li class="workers-item">
+            <li class="workers__item">
               <img
                 src="./images/section4/img4-3-1x.jpg"
                 alt=""
                 width="270"
               />
-              <div class="workers-boxcard">
-                <h3 class="workers-title">
+              <div class="boxcard">
+                <h3 class="boxcard__title">
                   Микола Тарасов
                 </h3>
-                <p class="workers-text">Marketing</p>
-                <ul class="social-networks-list list">
-                  <li class="social-networks-item">
-                    <a class="social-networks-link link"
+                <p class="boxcard__text">Marketing</p>
+                <ul class="social-networks__list list">
+                  <li class="social-networks__item">
+                    <a class="social-networks__link link"
                       ><svg
-                        class="social-networks-icon"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -312,10 +314,10 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li class="social-networks-item">
-                    <a class="social-networks-link link"
+                  <li class="social-networks__item">
+                    <a class="social-networks__link link"
                       ><svg
-                        class="social-networks-icon"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -324,10 +326,10 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li class="social-networks-item">
-                    <a class="social-networks-link link"
+                  <li class="social-networks__item">
+                    <a class="social-networks__link link"
                       ><svg
-                        class="social-networks-icon"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -336,10 +338,10 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li class="social-networks-item">
-                    <a class="social-networks-link link"
+                  <li class="social-networks__item">
+                    <a class="social-networks__link link"
                       ><svg
-                        class="social-networks-icon"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -351,22 +353,22 @@
                 </ul>
               </div>
             </li>
-            <li class="workers-item">
+            <li class="workers__item">
               <img
                 src="./images/section4/img4-4-1x.jpg"
                 alt=""
                 width="270"
               />
-              <div class="workers-boxcard">
-                <h3 class="workers-title">
+              <div class="boxcard">
+                <h3 class="boxcard__title">
                   Михайло Єрмаков
                 </h3>
-                <p class="workers-text">UI Designer</p>
-                <ul class="social-networks-list list">
-                  <li class="social-networks-item">
-                    <a class="social-networks-link link"
+                <p class="boxcard__text">UI Designer</p>
+                <ul class="social-networks__list list">
+                  <li class="social-networks__item">
+                    <a class="social-networks__link link"
                       ><svg
-                        class="social-networks-icon"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -375,10 +377,10 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li class="social-networks-item">
-                    <a class="social-networks-link link"
+                  <li class="social-networks__item">
+                    <a class="social-networks__link link"
                       ><svg
-                        class="social-networks-icon"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -387,10 +389,10 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li class="social-networks-item">
-                    <a class="social-networks-link link"
+                  <li class="social-networks__item">
+                    <a class="social-networks__link link"
                       ><svg
-                        class="social-networks-icon"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -399,10 +401,10 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li class="social-networks-item">
-                    <a class="social-networks-link link"
+                  <li class="social-networks__item">
+                    <a class="social-networks__link link"
                       ><svg
-                        class="social-networks-icon"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -503,11 +505,11 @@
         </div>
       </section>
     </main>
-    <footer class="footer-page">
+    <footer class="footer">
       <div class="container footer-contents">
         <div>
           <a href="./index.html" class="logo"
-            ><span class="logo-color">Web</span>Studio</a
+            ><span class="logo--blue">Web</span>Studio</a
           >
           <address>
             <ul class="footer-auth list">
