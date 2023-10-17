@@ -543,79 +543,32 @@
 
 /* modal form checkbox */
 
-/* .checkbox-modal {
-  margin-bottom: 30px;
-}
-
-.checkbox {
-  display: flex;
-  align-items: center;
-}
-
-.checkbox-input {
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-.check-icon {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  border: 2px solid var(--title-text-color);
-  border-radius: 2px;
-  margin-right: 7px;
-}
-
-.checkbox-input:checked + .check-icon {
-  background-image: url(../images/svg/icon-check.svg);
-  background-size: contain;
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-}
-
-.checkbox-text {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  white-space: pre;
-}
-.checkbox-text-activ {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-  text-decoration: underline;
-} */
-
-/* Стилі для чекбокса у модальному вікні */
-
 .checkbox-modal {
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .checkbox {
   display: flex;
   align-items: center;
+  border: 1px solid red;
+  width: 425px;
 }
 
 .checkbox-input {
-  opacity: 0;
-  z-index: 1;
+  /* position: relative; */
+  /* opacity: 0; */
+  /* z-index: 1; */
 
-  pointer-events: none;
+  -webkit-appearance: none;
+  appearance: none;
+  /* pointer-events: none; */
 }
 
 .check-icon {
   display: inline-block;
+  /* position: absolute; */
   width: 15px;
   height: 15px;
   border: 2px solid var(--title-text-color);
