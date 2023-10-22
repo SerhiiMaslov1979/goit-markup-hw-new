@@ -30,7 +30,7 @@
   align-items: center;
 }
 
-/* site-nav */
+/* site-nav BEM*/
 
 .navigation {
   display: flex;
@@ -81,7 +81,7 @@
   color: var(--accent-color);
 }
 
-/* auth */
+/* auth BEM*/
 
 .auth-nav__list {
   display: flex;
@@ -142,18 +142,21 @@
   background: var(--accent-color);
 }
 
-/* footer */
+/* footer BEM*/
 
 .footer {
   padding: 60px 0;
   background: var(--footer-hero-bg-color);
 }
 
-.footer-contents {
+.footer__contents {
   display: flex;
   /* margin-left: 70px; */
 }
-.footer-auth .link {
+
+/* footer auth BEM*/
+
+.footer__auth .link {
   text-align: left;
 
   font-weight: 400;
@@ -166,33 +169,27 @@
     var(--transition-function);
 }
 
-.footer-auth .footer-link {
-  text-align: left;
-
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+.footer__auth .footer__link {
   color: var(--footer-text-color);
-
-  transition: color var(--time-function)
-    var(--transition-function);
 }
 
-.footer-auth .link:hover,
-.footer-auth .link:focus {
+.footer__auth .link:hover,
+.footer__auth .link:focus {
   color: var(--accent-color);
 }
 
-.footer-auth .link:active {
+.footer__auth .link:active {
   color: var(--accent-color);
 }
-.footer-social-networks {
+
+/* footer-social-networks BEM*/
+
+.footer__social-networks {
   display: flex;
   flex-direction: column;
   margin-left: 93px;
 }
-.footer-social-title {
+.footer__social-title {
   text-align: left;
   margin-bottom: 20px;
 
@@ -203,12 +200,12 @@
   text-transform: uppercase;
   color: var(--primary-bg-color);
 }
-.footer-social-list {
+.footer__social-list {
   display: flex;
   align-items: baseline;
   gap: 10px;
 }
-.footer-social-item {
+.footer__social-item {
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -217,29 +214,29 @@
   transition: background var(--time-function)
     var(--transition-function);
 }
-.footer-social-item:hover,
-.footer-social-item:focus {
+.footer__social-item:hover,
+.footer__social-item:focus {
   background: var(--accent-color);
 }
 
-.footer-social-item:active {
+.footer__social-item:active {
   background: var(--accent-color);
 }
 
-.footer-social-link {
+.footer__social-link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
 }
-.footer-social-icon {
+.footer__social-icon {
   fill: #fff;
 }
 
-/* footer-form */
+/* footer-form BEM*/
 
-.footer-form {
+.footer__form {
   display: block;
   margin-left: 93px;
 }
@@ -247,7 +244,7 @@
   display: flex;
   gap: 12px;
 }
-.footer-title-form {
+.footer__title-form {
   text-align: left;
   margin-bottom: 20px;
 
@@ -258,7 +255,7 @@
   color: var(--primary-bg-color);
   text-transform: uppercase;
 }
-.footer-form-input {
+.footer__form-input {
   width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -274,15 +271,15 @@
   /* border: 1px; */
 }
 
-.footer-form-input::placeholder {
+.footer__form-input::placeholder {
   color: var(--text-footer-btn-form);
 }
 
-.footer-form-input:focus {
+.footer__form-input:focus {
   border-color: var(--accent-color);
 }
 
-.footer-input-btn {
+.footer__input-btn {
   position: relative;
 
   width: 200px;
@@ -306,18 +303,18 @@
     var(--transition-function);
 }
 
-.footer-input-btn:hover,
-.footer-input-btn:focus {
+.footer__input-btn:hover,
+.footer__input-btn:focus {
   background: var(--activ-accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.footer-input-btn:active {
+.footer__input-btn:active {
   background: var(--activ-accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.footer-input-icon {
+.footer__input-icon {
   position: absolute;
   top: 50%;
   right: 28px;
@@ -386,7 +383,7 @@
   background: var(--activ-accent-color);
 }
 
-/*modal-window*/
+/* modal-window BEM*/
 
 .backdrop {
   position: fixed;
@@ -427,7 +424,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.modal-close-btn {
+.modal__close-btn {
   position: absolute;
   right: 8px;
   top: 8px;
@@ -448,30 +445,43 @@
     var(--transition-function);
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.modal__close-btn:hover,
+.modal__close-btn:focus {
   border-color: var(--accent-color);
 }
 
-.modal-close-btn:hover .modal-close-icon,
-.modal-close-btn:focus .modal-close-icon {
+.modal__close-btn:hover .modal__close-icon,
+.modal__close-btn:focus .modal__close-icon {
   fill: var(--accent-color);
 }
-.modal-close-icon {
+.modal__close-icon {
   fill: var(--border-bg-icon);
   transition: fill var(--time-function)
     var(--transition-function);
 }
 
-/* modal form */
+/* modal form BEM*/
 
-.modal-form {
+.input-wrap {
+  position: relative;
+}
+
+.modal__input-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: color var(--time-function)
+    var(--transition-function);
+}
+
+.modal__form {
   display: block;
 
   text-align: center;
 }
 
-.modal-title {
+.modal__title {
   text-align: center;
 
   font-weight: 700;
@@ -482,7 +492,7 @@
   color: var(--title-text-color);
 }
 
-.modal-input {
+.modal__input {
   width: 100%;
   min-height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -494,11 +504,11 @@
   outline: transparent;
 }
 
-.modal-input:focus,
-.comment-modal-input:focus {
+.modal__input:focus,
+.modal__comment-input:focus {
   border-color: var(--accent-color);
 }
-.modal-input:focus + .modal-input-icon {
+.modal__input:focus + .modal__input-icon {
   fill: var(--accent-color);
 }
 
@@ -522,7 +532,7 @@
   margin-bottom: 20px;
 }
 
-.comment-modal-input {
+.modal__comment-input {
   display: block;
   width: 100%;
   min-height: 120px;
@@ -532,8 +542,8 @@
   resize: none;
   outline: transparent;
 }
-.comment-modal-input::placeholder,
-.modal-input::placeholder {
+.modal__comment-input::placeholder,
+.modal__input::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -541,7 +551,7 @@
   color: rgba(117, 117, 117, 0.5);
 }
 
-/* modal form checkbox */
+/* modal form checkbox BEM*/
 
 .checkbox {
   margin-bottom: 30px;
@@ -601,9 +611,9 @@
   text-decoration: underline;
 }
 
-/* modal-btn */
+/* modal-btn BEM*/
 
-.modal-btn {
+.modal__btn {
   width: 200px;
   height: 50px;
   color: var(--primary-bg-color);
@@ -616,22 +626,9 @@
   transition: background-color var(--time-function)
     var(--transition-function);
 }
-.modal-btn:hover,
-.modal-btn:focus {
+.modal__btn:hover,
+.modal__btn:focus {
   background-color: var(--activ-accent-color);
-}
-
-.input-wrap {
-  position: relative;
-}
-
-.modal-input-icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
-  transition: color var(--time-function)
-    var(--transition-function);
 }
 
 /* feature BEM */
