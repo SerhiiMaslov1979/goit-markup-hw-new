@@ -1,0 +1,42 @@
+.footer__input-btn {
+  position: relative;
+
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+
+  border-radius: 4px;
+  padding: 10px 62px 10px 28px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-bg-color);
+  background: var(--accent-color);
+  border-color: transparent;
+
+  transition: background-color var(--time-function)
+    var(--transition-function);
+}
+
+.footer__input-btn:hover,
+.footer__input-btn:focus {
+  background: var(--activ-accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer__input-btn:active {
+  background: var(--activ-accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer__input-icon {
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+  fill: var(--primary-bg-color);
+}

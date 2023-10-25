@@ -1,0 +1,44 @@
+.projects-btn__button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+  color: var(--title-text-color);
+  background: var(--section-bg-color);
+  border-radius: 4px;
+  padding: 6px 22px;
+  border-color: transparent;
+
+  transition: background var(--time-function)
+      var(--transition-function),
+    color var(--time-function) var(--transition-function),
+    box-shadow var(--time-function);
+}
+.projects-btn__button:hover,
+.projects-btn__button:focus {
+  color: var(--primary-bg-color);
+  background: var(--accent-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.projects-btn__button:active {
+  color: var(--primary-bg-color);
+  background: var(--accent-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.projects-btn__list {
+  display: flex;
+  justify-content: center;
+}
+.projects-btn__item:not(:last-child) {
+  margin-right: 8px;
+}

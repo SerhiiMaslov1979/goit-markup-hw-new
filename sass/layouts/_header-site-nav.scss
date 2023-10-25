@@ -1,0 +1,27 @@
+.site-nav__list .link.current {
+  color: var(--accent-color);
+}
+.site-nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav__list .link {
+  text-align: left;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+
+  transition: color var(--time-function)
+    var(--transition-function);
+}
+
+.site-nav__item .link:hover,
+.site-nav__item .link:focus {
+  color: var(--accent-color);
+}

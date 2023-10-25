@@ -1,2 +1,54 @@
 @import "./utils/variables";
+@import "./base/reset";
+@import "./base/common";
+@import "./components/container";
+@import "./utils/hidden";
 @import "./utils/mixins";
+
+@import "./components/logo";
+
+@import "./layouts/header";
+@import "./layouts/header-site-nav";
+@import "./layouts/header-auth-nav";
+@import "./layouts/header-bottom-band";
+
+@import "./components/hero";
+@import "./components/hero-title";
+@import "./components/hero-btn";
+@import "./components/hero-modal-window";
+@import "./components/hero-modal-close-btn";
+@import "./components/hero-modal-form";
+@import "./components/hero-modal-checkbox";
+@import "./components/hero-modal-btn";
+
+@import "./components/feature";
+@import "./components/feature-img";
+@import "./components/feature-title";
+@import "./components/feature-main-title";
+@import "./components/feature-text";
+
+@import "./components/activities";
+@import "./components/activities-title";
+
+@import "./components/workers";
+@import "./components/workers-title";
+@import "./components/boxcard";
+@import "./components/boxcard-title";
+@import "./components/boxcard-text";
+@import "./components/social-networks";
+
+@import "./components/clients";
+@import "./components/clients-title";
+
+@import "./components/projects-btn";
+@import "./components/projects-list";
+@import "./components/product-card";
+@import "./components/product-title";
+@import "./components/product-text";
+@import "./components/product-thumb-overlay";
+
+@import "./layouts/footer";
+@import "./layouts/footer-auth";
+@import "./layouts/footer-social-networks";
+@import "./layouts/footer-form";
+@import "./layouts/footer-form-btn";

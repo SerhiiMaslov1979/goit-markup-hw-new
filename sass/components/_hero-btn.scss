@@ -1,0 +1,27 @@
+.hero__button {
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px 32px;
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.05em;
+  color: var(--primary-bg-color);
+  background: var(--accent-color);
+  border-color: transparent;
+
+  transition: background var(--time-function)
+      var(--transition-function),
+    color var(--time-function) var(--transition-function);
+}
+
+.hero__button:hover,
+.hero__button:focus {
+  background: var(--activ-accent-color);
+}
+
+.hero__button:active {
+  background: var(--activ-accent-color);
+}

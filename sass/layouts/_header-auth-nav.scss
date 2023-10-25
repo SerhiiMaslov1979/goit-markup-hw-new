@@ -1,0 +1,47 @@
+// .auth-nav__item .link {
+//   display: inline-block;
+// }
+
+.auth-nav__list {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav__list .link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+
+  transition: color var(--time-function)
+    var(--transition-function);
+}
+
+.auth-nav__item .icon {
+  display: inline-block;
+  margin-right: 10px;
+  fill: currentColor;
+
+  transition: fill var(--time-function)
+    var(--transition-function);
+}
+
+.auth-nav__item .link:hover .icon,
+.auth-nav__item .link:focus .icon {
+  fill: var(--accent-color);
+}
+
+.auth-nav__item .link:hover,
+.auth-nav__item .link:focus {
+  color: var(--accent-color);
+}
+
+.auth-nav__item .link:active .icon {
+  fill: var(--accent-color);
+  color: var(--accent-color);
+}
