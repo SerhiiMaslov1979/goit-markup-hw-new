@@ -2,12 +2,29 @@
   font-style: normal;
   text-align: center;
   margin: 0 auto;
-  max-width: 696px;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-bg-color);
+
+  @include mobile {
+    max-width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+  }
+
+  @include tablet {
+    max-width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+  }
+
+  @include desktop {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }

@@ -1,57 +1,57 @@
-.checkbox {
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-}
+// .checkbox {
+//   margin-bottom: 30px;
+//   display: flex;
+//   justify-content: center;
+// }
 
-.modal__checkbox-label {
-  display: flex;
-  align-items: center;
-  width: 425px;
-}
+// .modal__checkbox-label {
+//   display: flex;
+//   align-items: center;
+//   width: 425px;
+// }
 
-.checkbox__input {
-  position: relative;
-  opacity: 0;
-  margin-right: 7px;
-}
+// .checkbox__input {
+//   position: relative;
+//   opacity: 0;
+//   margin-right: 7px;
+// }
 
-.checkbox__icon {
-  display: inline-block;
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border: 2px solid var(--title-text-color);
-  border-radius: 2px;
-}
+// .checkbox__icon {
+//   display: inline-block;
+//   position: absolute;
+//   width: 15px;
+//   height: 15px;
+//   border: 2px solid var(--title-text-color);
+//   border-radius: 2px;
+// }
 
-.checkbox__input:checked + .checkbox__icon {
-  background-image: url(../images/svg/icon-check.svg);
-  background-size: contain;
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-}
+// .checkbox__input:checked + .checkbox__icon {
+//   background-image: url(../images/svg/icon-check.svg);
+//   background-size: contain;
+//   background-origin: border-box;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-color: var(--accent-color);
+//   border-color: var(--accent-color);
+// }
 
-.checkbox__text {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  white-space: pre;
-}
+// .checkbox__text {
+//   font-family: inherit;
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 1.71;
+//   letter-spacing: 0.03em;
+//   white-space: pre;
+// }
 
-.checkbox__text-activ {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-  text-decoration: underline;
-}
+// .checkbox__text-activ {
+//   font-family: inherit;
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 1.71;
+//   letter-spacing: 0.03em;
+//   color: var(--accent-color);
+//   text-decoration: underline;
+// }

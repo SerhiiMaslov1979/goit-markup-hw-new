@@ -1,6 +1,45 @@
+// .container {
+//   //   display: block;
+//   //   width: 1200px;
+//   //   width: 100%;
+//   margin: 0 auto;
+//   padding: 0 15px;
+//   background: blue;
+
+// Приклад 1
+
+@import "../utils/mixins";
+
 .container {
+  //   background: blue;
   display: block;
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+
+  @include mobile {
+    max-width: 480px;
+    // background: teal;
+  }
+
+  @include tablet {
+    max-width: 768px;
+    // background: red;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+    // background: olive;
+  }
 }
+
+//   @include mobile {
+
+//   }
+
+//   @include tablet {
+
+//   }
+
+//   @include desktop {
+
+//   }

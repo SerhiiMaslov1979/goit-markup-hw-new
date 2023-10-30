@@ -1,35 +1,35 @@
-.modal__close-btn {
-  position: absolute;
-  right: 8px;
-  top: 8px;
+// .modal__close-btn {
+//   position: absolute;
+//   right: 8px;
+//   top: 8px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
 
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  padding: 6px;
+//   width: 30px;
+//   height: 30px;
+//   border-radius: 50%;
+//   padding: 6px;
 
-  background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: border-color var(--time-function)
-    var(--transition-function);
-}
+//   background-color: transparent;
+//   border: 1px solid rgba(0, 0, 0, 0.1);
+//   cursor: pointer;
+//   transition: border-color var(--time-function)
+//     var(--transition-function);
+// }
 
-.modal__close-btn:hover,
-.modal__close-btn:focus {
-  border-color: var(--accent-color);
-}
+// .modal__close-btn:hover,
+// .modal__close-btn:focus {
+//   border-color: var(--accent-color);
+// }
 
-.modal__close-btn:hover .modal__close-icon,
-.modal__close-btn:focus .modal__close-icon {
-  fill: var(--accent-color);
-}
-.modal__close-icon {
-  fill: var(--border-bg-icon);
-  transition: fill var(--time-function)
-    var(--transition-function);
-}
+// .modal__close-btn:hover .modal__close-icon,
+// .modal__close-btn:focus .modal__close-icon {
+//   fill: var(--accent-color);
+// }
+// .modal__close-icon {
+//   fill: var(--border-bg-icon);
+//   transition: fill var(--time-function)
+//     var(--transition-function);
+// }
