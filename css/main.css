@@ -129,7 +129,7 @@ html {
   margin-left: auto;
   margin-right: auto;
   background: var(--footer-hero-bg-color);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/header-mobile-img.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -138,7 +138,7 @@ html {
   .hero {
     padding: 118px 0;
     background: var(--footer-hero-bg-color);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/header-mobile-img.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -148,7 +148,7 @@ html {
   .hero {
     padding: 118px 0;
     background: var(--footer-hero-bg-color);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/header-tablet-img.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/tablet.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -158,7 +158,7 @@ html {
   .hero {
     padding: 200px 0;
     background: var(--footer-hero-bg-color);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/desktop-img.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/desktop.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
