@@ -69,6 +69,23 @@
             >
           </li>
         </ul>
+        <div>
+
+          <!-- button-menu-open  -->
+          
+          <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-open>
+            <svg class="mob-menu__menu-icon" aria-label="Переключатель мабильного окна" width="24px" height="24px">
+              <use class="icon-cross" href="./images/iconmobilemenu/menu.svg"></use>
+              <use class="icon-menu" href="./images/iconmobilemenu/close.svg"></use>
+            </svg>
+          </button>
+
+
+          <div class="menu-container" id="menu-container" data-menu>
+            <div class="navigation"></div>
+            <div class="contacts"></div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -747,6 +764,6 @@
     </footer>
     <script src="./js/modal.js"></script>
     <script src="./js/forma.js"></script>
-    <!-- <script src="./js/mobile-menu.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
