@@ -19,28 +19,28 @@
 
   @include mobile {
     padding: 118px 0;
-    background-image: url("../images/hero/mobile.jpg");
+    background-image: url("../../images/hero/mobile.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../images/hero/mobile2x.jpg");
+      background-image: url("../../images/hero@2x/mobile2x.jpg");
     }
   }
 
   @include tablet {
     padding: 118px 0;
-    background-image: url("../images/hero/tablet.jpg");
+    background-image: url("../../images/hero/tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../images/hero/tablet2x.jpg");
+      background-image: url("../../images/hero@2x/mobile2x.jpg");
     }
   }
 
   @include desktop {
     padding: 200px 0;
-    background-image: url("../images/hero/desktop.jpg");
+    background-image: url("../../images/hero/desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../images/hero/desktop2x.jpg");
+      background-image: url("../../images/hero@2x/desktop2x.jpg");
     }
   }
   @media screen {

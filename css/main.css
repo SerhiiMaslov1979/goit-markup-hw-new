@@ -141,7 +141,7 @@ html {
 }
 @media screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../images/hero/mobile2x.jpg");
+    background-image: url("../../images/hero@2x/mobile2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
@@ -152,7 +152,7 @@ html {
 }
 @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../images/hero/tablet2x.jpg");
+    background-image: url("../../images/hero@2x/mobile2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -163,10 +163,9 @@ html {
 }
 @media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../images/hero/desktop2x.jpg");
+    background-image: url("../../images/hero@2x/desktop2x.jpg");
   }
 }
-
 .hero__title {
   font-style: normal;
   text-align: center;
