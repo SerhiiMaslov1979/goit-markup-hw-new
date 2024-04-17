@@ -22,15 +22,6 @@
     background-image: url("../images/hero@2x/mobile2x.jpg");
   }
 
-  // @include mobile {
-  //   padding: 118px 0;
-  //   // background-image: url("../images/hero/mobile.jpg");
-
-  //   @media (min-resolution: 2dppx) {
-  //     background-image: url("../images/hero@2x/mobile2x.jpg");
-  //   }
-  // }
-
   @include tablet {
     padding: 118px 0;
     background-image: url("../images/hero/tablet.jpg");
