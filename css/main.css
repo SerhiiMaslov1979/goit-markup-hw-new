@@ -129,17 +129,12 @@ html {
   margin: 0 auto;
   background: var(--footer-hero-bg-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: url("../images/hero/mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-@media screen and (min-width: 480px) {
-  .hero {
-    padding: 118px 0;
-    background-image: url("../images/hero/mobile.jpg");
-  }
-}
-@media screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero {
     background-image: url("../images/hero@2x/mobile2x.jpg");
   }

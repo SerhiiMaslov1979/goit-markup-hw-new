@@ -13,18 +13,23 @@
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)
   );
+  background-image: url("../images/hero/mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  @include mobile {
-    padding: 118px 0;
-    background-image: url("../images/hero/mobile.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../images/hero@2x/mobile2x.jpg");
-    }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/hero@2x/mobile2x.jpg");
   }
+
+  // @include mobile {
+  //   padding: 118px 0;
+  //   // background-image: url("../images/hero/mobile.jpg");
+
+  //   @media (min-resolution: 2dppx) {
+  //     background-image: url("../images/hero@2x/mobile2x.jpg");
+  //   }
+  // }
 
   @include tablet {
     padding: 118px 0;
